@@ -1,0 +1,6 @@
+.star-button {
+    background: url('path-to-your-star-image.png') no-repeat;
+    border: none;
+    width: 25px;
+    height: 25px;
+}

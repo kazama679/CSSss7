@@ -1,0 +1,29 @@
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: #bbb;
+    position: relative;
+    margin: 10px;
+}
+.notification {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 3px solid white;
+    margin: -7px;
+    padding: 1px 7px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+}
+.notification2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: -7px;
+    padding: 0px 0px;
+    border-radius: 50%;
+    color: red;
+}

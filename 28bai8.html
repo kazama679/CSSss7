@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .task {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .task::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 6px; 
+            border-left: 3px solid rgb(199, 199, 199); 
+            z-index: 1;
+        }
+        .status, .fa-solid {
+            width: 15px;
+            height: 15px; 
+            border-radius: 50%;
+            margin-right: 10px;
+            position: relative;
+            z-index: 2; 
+        .completed {
+            background-color: green;
+        }
+        .uncompleted {
+            background-color: red;
+        }
+        p {
+            margin-bottom: 10px; 
+        }
+        </style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+<div class="task">
+    <div class="status completed"></div>
+    <p>Create a services site 2015-09-01</p>
+</div>
+<div class="task">
+    <div class="status uncompleted"></div>
+    <p>Create a services site 2015-09-01</p>
+</div>
+<div class="task">
+    <div class="status uncompleted"></div>
+    <p><br><br>Solve initial network problems 1<br>
+        Solve initial network problems 2<br>
+        Solve initial network problems 3 2015-09-01</p>
+</div>
+<div class="task">
+    <div class="status completed"></div>
+    <p><br><br>Technical testing 1<br>
+        Technical testing 2<br>
+        Technical testing 3 2015-09-01</p>
+</div>
+<div class="task">
+    <div class="status uncompleted"></div>
+    <p><br><br>Technical testing 1<br>
+        Technical testing 2<br>
+        Technical testing 3 2015-09-01</p>
+</div>
+<div class="task">
+    <i class="fa-solid fa-face-smile-beam"></i>
+    <p>Create a services site 2015-09-01</p>
+</div>
+</body>
+</html>

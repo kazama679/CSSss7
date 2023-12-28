@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td {
+            padding: 10px;
+        }
+        .status-cell::before {
+            content: '• ';
+        }
+        td:nth-child(odd) {
+            background-color: #f2f2f2; 
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+            <td>Product</td>
+            <td>Cloud Database</td>
+            <td>Billing Mode</td>
+            <td>Prepaid</td>
+            <td>Automatic Renewal</td>
+            <td>YES</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Order time</td>
+                <td>2018-04-24 18:00:00</td>
+                <td>Usage Time</td>
+                <td colspan="3">2019-04-24 18:00:00</td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td class="status-cell" colspan="5">Running</td>
+            </tr>
+            <tr>
+                <td>Negotiated Amount</td>
+                <td>$80.00</td>
+                <td>Discount</td>
+                <td>$20.00</td>
+                <td>Official Receipts</td>
+                <td>$60.00</td>
+            </tr>
+            <tr>
+                <td>Config Info</td>
+                <td colspan="5">Data disk type: MongoDB<br>
+                    Database version: 3.4<br>
+                    Package: dds.mongo.mid<br>
+                    Storage space: 10 GB<br>
+                    Replication factor: 3<br>
+                    Region: East China 1</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
